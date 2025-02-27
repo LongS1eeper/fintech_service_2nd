@@ -13,11 +13,11 @@ CREATE Table customers(id int, name varchar(100), sex varchar(20), phone varchar
 # 테이블 삭제하기
 DROP table customers;
 
-# market_db 만들기
+# 실습) market_db 만들기
 CREATE database market_db;
 USE market_db;
 
-# hongong1 테이블 만들기 toy_id(int), toy_name(char(4)), age(int)
+# 실습) hongong1 테이블 만들기 toy_id(int), toy_name(char(4)), age(int)
 CREATE table hongong1(toy_id int, toy_name char(4), age int);
 SHOW tables;	# 테이블 조회
 DESC hongong1;	# hongong1 컬럼 조회
@@ -44,9 +44,9 @@ INSERT INTO hongong2 VALUES (NULL, '슬링키', 25);
 INSERT INTO hongong2 VALUES (NULL, '렉스', 25);
 SELECT * FROM hongong2;
 
-# 테이블 수정하기 alter
+# 테이블 수정하기 ALTER
 # 컬럼 추가: ALTER table 테이블명 ADD COLUMN 컬럼명, 자료형, 속성(NOT NULL, UNIQUE)
-# hongong2 테이블에 country 컬럼 조작하기
+# 실습) hongong2 테이블에 country 컬럼 조작하기
 ALTER TABLE hongong2 ADD COLUMN country varchar(100);		# 컬럼 추가
 ALTER TABLE product CHANGE COLUMN 제조일사 제조일자 DATE;		# 컬럼명 수정
 
@@ -110,14 +110,16 @@ salary int null,
 primary key(emp_no));
 DESC emp_test;
 
+
 INSERT INTO emp_test
-(emp_no, emp_name, hire_date, salary)
+	(emp_no, emp_name, hire_date, salary)
 values
-(1005, '퀴리', 20210301, 4000),
-(1006, '호킹', 20210305, 5000),
-(1007, '패러데이', 20210401, 2200),
-(1008, '맥스웰', 20210404, 3300),
-(1009, '플랑크', 20210405, 4400);
+	(1005, '퀴리', 20210301, 4000),
+	(1006, '호킹', 20210305, 5000),
+	(1007, '패러데이', 20210401, 2200),
+	(1008, '맥스웰', 20210404, 3300),
+	(1009, '플랑크', 20210405, 4400);
+
 
 SELECT * FROM emp_test;
 
