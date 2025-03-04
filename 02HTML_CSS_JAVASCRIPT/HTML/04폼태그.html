@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04폼태그</title>
+</head>
+<body>
+    <!-- 폼 태그 : input으로 각종 버튼 생성 -->
+
+    <!-- 문자 입력 받는 버튼 -->
+    <label>아이디</label>
+    <input type="text" value = "ID">
+
+    <hr>
+    
+    <label>비밀번호</label>
+    <input type="text" value = "Password">
+
+    <hr>
+
+    <!-- 체크박스는 다중선택 가능 -->
+    <label>체크박스</label>
+    <h4>취미</h4>
+    <label>스포츠</label>
+    <input type="checkbox" value = "sports">
+    <label>게임</label>
+    <input type="checkbox" value = "game">
+    <label>요리</label>
+    <input type="checkbox" value = "cooking">
+    
+    <hr>
+
+    <!-- 라디오 버튼은 다중선택 불가능-->
+    <h3>라디오 버튼</h3>
+    <h4>직업</h4>
+    <label>UI/UX 디자이너</label>
+    <input type="radio" name="job" value = "sports">
+    <label>게임</label>
+    <input type="radio" name="job" value = "game">
+    <label>요리</label>
+    <input type="radio" name="job" value = "cooking">
+
+    <hr>
+
+    <!-- 파일 첨부 버튼 -->
+    <h3>파일 첨부</h3>
+    <label>첨부 파일</label>
+    <input type ="file">
+
+    <hr>
+    
+    <!-- 색상 선택 버튼 -->
+    <h3>색상값 선택하기 컬러박스</h3>
+    <label>색상 선택</label>
+    <input type = "color">
+
+    <hr>
+    
+    <!-- 날짜 선택 버튼 -->
+    <h3>날짜 선택하기</h3>
+    <label>날짜 선택</label>
+    <input type = "date">
+
+    <hr>
+    
+    <!-- 전송 or 취소 버튼 -->
+    <h3>전송버튼/취소버튼</h3>
+    <label>전송버튼</label>
+    <input type = "submit">
+    <label>취소버튼</label>
+    <input type = "reset">
+
+    <hr>
+    
+    <!-- select 버튼 드롭다운 메뉴: 목록 중 선택 버튼 -->
+    <h3>select 버튼 드롭다운 메뉴</h3>
+    <select>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Javascript</option>
+    </select>
+
+    <hr>
+
+    <!-- 텍스트 입력 박스 -->
+    <h3>텍스트 박스</h3>
+    <textarea></textarea>
+
+    <hr>
+
+    <!-- form 태그 양식 -->
+    <!-- <form action = '전송위치 URL', method = "전송방법 GET, POST">
+            <input>
+            <input>
+         <submit>
+         </form>    -->
+
+     <h3>form 태그로 폼 요소 보내기</h3>
+     <form action='/' method='post'>
+        <label>아이디</label>
+        <input type= 'text'>
+        <label>비밀번호</label>
+        <input type = "password">       <!-- password 타입은 입력 시 ㆍ로 나타남 -->
+
+        <input type="reset">
+        <input type="submit">
+     </form>
+     
+
+</body>
+</html>

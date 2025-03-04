@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03목록태그</title>
+</head>
+<body>
+    <!-- 목록태그 ul, ol + 자식 관계 li: 리스트 태그 -->
+    <!-- ul: 순서가 없는 목록 (ㆍ로 표기) -->
+     <h1>내가 좋아하는 음식</h1>
+     <ul>
+        <li>과일</li>
+            <ul>
+                <li>딸기</li>
+                <li>바나나</li>
+                <li>사과</li>
+            </ul>
+        <li>면류</li>
+        <li>음료수</li>
+     </ul>
+
+    <!-- ol: 순서가 있는 목록 (숫자로 표기) -->
+     <h1> 내가 좋아하는 음식 </h1>
+     <ol>
+        <li>과일</li>
+        <li>면류</li>
+            <ul>
+                <li>라면</li>
+                <li>짜장면</li>
+                <li>짬뽕</li>
+            </ul>
+        <li>음료수</li>
+    </ol>    
+
+
+    <!-- dl, dt, dd 정의형 목록 만들기 -> 용어 정의, 질문 답변 등에 적합 -->
+     <h1>IT 직군</h1>   
+     <dl>           <!-- 목록 감싸는 태그 -->
+        <dt>UI 디자이너</dt>                          <!-- 용어나 제목 태그 -->
+        <dd>기능성과 심미성을 고려한 UI 디자인</dd>     <!-- tap과 함께 설명을 적는 태그 -->
+
+        <dt>프론트엔드 개발자</dt>
+        <dd>사용자가 직접 이용하는 프론트 화면 개발</dd>
+
+        <dt>백엔드 개발자</dt>
+        <dd>사용자 화면 뒤에 있는 웹 서버나 데이터베이스의 입출력 개발</dd>
+     </dl>
+</body>
+</html>

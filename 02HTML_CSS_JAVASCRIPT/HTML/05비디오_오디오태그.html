@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05비디오_오디오태그</title>
+</head>
+<body>
+    
+    <!-- Audio 오디오 파일 재생하기 -->
+    <!-- Audio 태그의 속성: 
+         controls:  오디오 파일을 재생하는 컨트롤 패널을 생성,
+         autoplay:  웹 페이지를 열면 오디오 파일 자동 재생,
+         loop:      오디오 파일을 무한 반복 재생, 
+         preload:   오디오 파일을 재생하기 전에 파일을 미리 불러오는 기능 -->
+    
+     <audio src="./media/calm.mp3" controls preload></audio>
+
+     <hr>
+
+    <!-- video 동영상 파일 재생하기 --> 
+    <!-- Video 태그의 속성: 
+         controls:  비디오 파일을 재생하는 컨트롤 패널을 생성,
+         autoplay:  웹 페이지를 열면 비디오 파일 자동 재생,
+         loop:      비디오 파일을 무한 반복 재생, 
+         preload:   비디오 파일을 재생하기 전에 파일을 미리 불러오는 기능
+         muted:     동영상에서 소리가 나지 않게 
+         poster:    동영상의 썸네일 이미지  -->
+
+     <video src="./Media/cloud.mp4" controls muted autoplay ></video>
+     <video src="./Media/cloud.mp4" controls poster="./Media/Image20250304153247.jpg" ></video>
+
+     
+</body>
+</html>

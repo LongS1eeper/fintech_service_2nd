@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- 상단부: head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 중단부: body -->
+<body>
+    <!-- 제목 태그 : h1 ~ h6 -->
+    <!-- h1이 가장 큰 제목, h6이 가장 작은 제목 -->
+     <h1>제목1</h1>
+     <h2>제목2</h2>
+     <h3>제목3</h3>
+     <h4>제목4</h4>
+     <h5>제목5</h5>
+     <h6>제목6</h6>
+
+    <!-- 내용 태그: p paragraph 문단 -->
+     <p> Lorem ipsum dolor sit amet. </p>
+
+    <!-- 콘텐츠를 그룹화하는 테그: div (주제박스 형성한다고 생각)-->
+     <div>
+        <p>요리</p>
+     </div>
+     <div>
+        <p>날씨</p>
+     </div>
+
+    <hr>    <!-- 구분선 -->
+    <div>
+        <h1> Lorem ipsum dolor sit .</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit blanditiis.</p>
+        <h2> Lorem, ipsum dolor.</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit blanditiis.</p>
+    </div>
+
+    <!-- strong, em, b, i 태그 -->
+    <!-- strong, b: bold체 / em, i: 기울임꼴 -->
+     <strong>강조할 문장 1 strong</strong>
+     <em>강조할 문장 2 em</em>
+     <b>강조할 문장 3 b</b>
+     <i>강조할 문장 3 i</i>
+
+    <hr>
+    <!-- 웹 페이지에 링크 걸기: a -->
+     <a href = 'https://www.naver.com'>네이버</a>
+
+    <!-- a 태그의 속성 target -->   
+     <a href = 'https://www.naver.com' target="_top">네이버</a>             <!-- 창 그래도 사이트 변경 -->
+     <a href = 'https://www.naver.com' target="_brank">네이버새창열기</a>    <!-- 새로운 창에서 사이트 열림-->
+    
+     
+    <!-- span 인라인 요소 태그 그룹화하기 -->
+    <!-- 태그의 종류 -->
+    <!-- 인라인 요소: 내용을 추가하면 옆으로 이어져서 생성,
+         블럭 요소: 내용을 추가하면 아래쪽으로 공간이 분리되어 생성 -->
+     <p>블력요소 1</p>
+     <p>블력요소 2</p>
+     <strong>인라인요소 1</strong>
+     <em>인라인요소 2</em>
+
+     <a href = "https://daum.net"> 다음 인라인 요소 3</a>
+     <p> span 태그는 <span><strong> 인라인 요소 </strong></span> 안에서 그룹화하는 태그 입니다.</p>
+
+
+    <!-- 이미지 넣기: img (alt는 이미지가 없는 경우 나타낼 설명) -->
+     <img src = "./img/다운로드.jpg" alt="고양이">
+
+    <!-- 이미지를 시맨틱 태그를 이용해 넣기 -->
+     <figure>
+        <img src = "./img/다운로드.jpg" alt = "고양이">
+     </figure>
+    <figcaption>고양이가 앞발을 테이블에 올리고 위를 올려다 보고 있는 사진</figcaption>     <!-- 사진 캡션 -->
+
+
+    <!-- br 태그: 강제 줄바꿈 -->
+    <strong>강조할 문장 1 strong</strong>
+    <em>강조할 문장 2 em</em>
+    <b>강조할 문장 3 b</b><br><br>      <!-- 줄바꿈 2번-->
+    <i>강조할 문장 3 i</i>
+
+
+</body>
+</html>

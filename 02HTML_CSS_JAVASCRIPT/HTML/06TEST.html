@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 태그 종합 예제</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>HTML 기본 요소 테스트 페이지</h1>
+        <div>
+            <a href = "#info"> 소개</a> |
+            <a href = "#list"> 목록</a> |
+            <a href = "#form"> 설문조사</a> |
+            <a href = "#table"> 팀원정보</a>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div>
+            <h2 id = 'info'>소개</h2>
+            <p>이 페이지는 HTML의 자주 사용하는 태그들을 테스트하기 위해 만들어졌습니다.</p>
+            <hr>
+        </div>
+
+        <div>
+            <h2 id = "list">목록 테스트</h2>
+            <h3>순서 있는 목록 (ol)</h3>
+            <ol>
+                <li>HTML 배우기</li>
+                <li>CSS 배우기</li>
+                <li>Javascript 배우기</li>
+            </ol>    
+            <h3>순서 없는 목록 (ul)</h3>
+            <ul>
+                <li>노트북</li>
+                <li>키보드</li>
+                <li>마우스</li>
+                <hr>
+            </ul>
+        </div>
+    
+        <div>
+            <h2 id = "form">설문조사 폼</h2>
+                <form action='#' method='POST'>     <!-- 이름 이메일이 들어가므로 POST -->
+                    <p> 
+                        <label>이름:</label> 
+                        <input type="text" value = ""> 
+                    </p>
+                    <p> 
+                        <label>이메일:</label> 
+                        <input type="email" value = "">      <!-- email type는 @가 가능 -->
+                    </p>    
+                    <h3>1. 좋아하는 과일을 선택하세요 (체크박스) </h3>
+                        <input type="checkbox" value = "apple"> 사과 <br>
+                        <input type="checkbox" value = "banana"> 바나나 <br>
+                        <input type="checkbox" value = "grape"> 포도
+
+                    <h3>2. 선호하는 개발 언어는 무엇인가요? (라디오 버튼)</h3>
+                        <input type="radio"  value = "html"> HTML<br>
+                        <input type="radio" name = "lang" value = "css"> CSS <br>
+                        <input type="radio" name = "lang" value = "javascript"> JavaScript
+                    <p> 의견: </p>
+                    <textarea></textarea>
+                    <p><input type = "submit" value = "제출"></p>
+                </form>
+            <hr>
+        </div>
+
+        <div>
+            <h2 id = "table">팀원 정보표</h2>
+                <table border="1">
+                    <caption>프로젝트 팀원 목록</caption>
+                    <thead>
+                        <tr>
+                            <th>이름</th>
+                            <th>역할</th>
+                            <th>이메일</th>             <!-- th로 설정된 값은 (컬럼명) Bold + 가운데정렬 -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>홍길동</td>
+                            <td>프론트엔드</td>
+                            <td>hong@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>김영희</td>
+                            <td>백엔드</td>
+                            <td>kim@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>이철수</td>
+                            <td>디자인</td>
+                            <td>lee@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <hr>
+        </div>
+    </main>
+
+    <footer>
+        <p>ⓒ 2025 HTML 테스트 페이지 | 문의: test@example.com</p>
+    </footer>
+</body>
+</html>
