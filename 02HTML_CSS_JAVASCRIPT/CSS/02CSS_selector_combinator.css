@@ -1,0 +1,132 @@
+/* 절대 경로 vs 상대 경로 */
+/* 절대 경로: 독립적이고 구체적인 위치 (ex, 서울시 강남구 역삼동 피나클 15 */
+/* 상대 경로: 특정 위치에 기반한 경로 (ex, 역삼역 4번출구 앞 건물, 역삼역 커피빈 옆 건물 */
+
+/* 파일 경로에 적용? */
+/* 절대 경로: C:\fintech\02HTML_CSS_JAVASCRIPT\CSS */
+/* 상대 경로: ./CSS(현재 위치부터) or ../CSS(하나 위로 올라간 위치부터) */
+
+/* 복합셀렉터 combinator */
+/* 부모자식 등 조상 자손 관계가 존재 */
+
+
+/* 후손 셀렉터 */
+/* 셀렉터A 셀렉터B (ex, div p : div 속 p를 모두 선택하고 싶은 경우) */
+div p{
+    color:red;
+}
+
+/* 자식 셀렉터 child combinator */
+/* 셀렉터A > 셀렉터B (ex, div > p : div의 자식 p만 모두 선택하고 싶은 경우 */
+div > p {
+    color:black;
+}
+
+
+/* 형제(동위) 셀렉터 sibling combinator */
+/* 형제 관계에서 뒤에 위치하는 요소를 선택할 때 사용 */
+
+/* 1. 인접 형제 셀렉터 (셀렉터A + 셀렉터B): 셀렉터A의 형제 요소 중 셀렉터A 바로 뒤에 위치하는 셀렉터B 요소를 선택 */
+/* A와 B 사이에 다른 요소가 존재하면 선택되지 않음 */
+p + ul {
+    color: red;
+}
+
+/* 2. 일반 형제 셀렉터 (셀렉터A ~ 셀렉터B): 셀렉터A의 형제 요소 중 뒤에 위치하는 셀렉터B 요소를 모두 선택 */
+span ~ ul {
+    color: rgb(0, 0, 0);
+}
+
+
+/* 가상 클래스 셀렉터 Pseudo-class selector */
+/* 요소의 특정 상태에 따라 스타일을 정의할 때 사용 */
+/* 특정 상태란? 마우스가 올라와 있을 때, 링크를 방문했을 때와 아직 방문하지 않았을 때, 포커스가 들어와 있을 때 */
+
+a:hover {         /* a 태그에 마우스가 올라왔을 때 */
+    background-color: red;
+}
+
+input:focus {     /* input 택스트 창을 클릭했을 때 */
+    background-color: black;
+}
+
+/* 링크 셀렉터 */
+/* : link 셀렉터가 방문하지 않은 링크일 때
+   : visited 셀렉터가 방문한 링크일 때
+   : hover 셀렉터가 마우스에 올라와 있을 때
+   : active 셀렉터가 클릭된 상태일 때
+   : focus 셀렉터에 포커스가 들어와 있을 때 
+*/
+a:link {
+    color: orange;
+}
+a:visited {
+    color: green;
+}
+a:active {
+    font-weight: bold;
+}
+
+input[type="text"]:focus {             /* 글자색 변경하는 방법 */
+    color: red;
+}
+
+input[type="password"]:focus {
+    color: yellow;
+}
+
+
+/* 구조 가상 클래스 셀렉터 */
+/* :first-child - 셀렉터에 해당하는 모든 요소 중 첫번째 자식인 요소를 선택 */
+/* :last-child - 셀렉터에 해당하는 모든 요소 중 마지막 자식인 요소를 선택 */
+
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: blue;
+}
+
+
+/* :nth-child(n), :nth-last-child(n) */
+/* :nth-child(n) : 셀렉터에 해당하는 모든 요소 중 앞에서 n번째 자식인 요소를 선택 */
+/* :nth-last-child(n) : 셀렉터에 해당하는 모든 요소 중 뒤에서 n번째 자식인 요소를 선택 */
+/* n은 0부터 시작 -> 여러 점화식 생성 가능 */
+
+/* ol 요소의 자식 요소인 li 요소 중에서 짝수 번째 요소만을 선택 */
+ol > li:nth-child(2n) {
+    color: orange;
+}
+
+/* ol의 li 중에서 홀수 번째 요소만을 선택 */
+ol > li:nth-child(2n+1) {
+    color: green;
+}
+
+/* ol의 li 중에서 첫번째 요소만을 선택 */
+ol > li:first-child {
+    color: red;
+}
+
+/* ol의 li 중에서 마지막 요소만을 선택 */
+ol > li:last-child {
+    color: blue;
+}
+
+/* ol의 li 중에서 4번째 요소만을 선택 */
+ol > li:nth-child(4) {
+    background-color: brown;
+}
+
+/* ul의 모든 자식 요소 중에서 뒤에서 홀수 번째 요소만 선택 */
+ul > :nth-last-child(2n+1) {
+    color: red;
+}
+
+/* ul의 모든 자식 요소 중에서 뒤에서 짝수 번째 요소만 선택 */
+ul > :nth-last-child(2n) {
+    color: blue;
+}
+
+

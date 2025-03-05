@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/03CSS_selector_nth_child.css">
+    <title>CSS_nth_child</title>
+</head>
+<body>
+    <h1>first-of-type, last-of-type, nth-of-type, nth-last-of-type</h1>
+    
+    <h2>이것은 제목입니다.</h2>
+    <p>첫번째 문단</p>
+    <p>두번째 문단</p>
+    <p>세번째 문단</p>
+    <p>네번째 문단</p>
+
+
+    <div>
+        <h2>이것은 div 안쪽 제목입니다.</h2>
+        <p>첫번째 문단</p>
+        <p>두번째 문단</p>
+        <p>세번째 문단</p>
+        <p>네번째 문단</p>
+    </div>
+    <hr>
+
+    <h1>정합성 체크 셀렉터</h1>
+    <label>입력값이 반드시 필요
+        <input type="text" required>          <!-- required : 입력값 필수 제한 -->
+    </label>
+    <br>
+    <label>특수문자를 포함하지 않는 4자리 문자 또는 숫자
+        <input type="text" value="ab1!" pattern="[a-zA-Z0-9]{4}">
+    </label>
+    <br>
+    <label>휴대폰 번호 형식
+        <input type="text" value="010-1111-2222" pattern="^\d{3}-\d{3,4}-\d{4}$">
+    </label>
+
+    <hr>
+
+    <h1>가상 셀렉터</h1>
+
+    <div class="beforafter">
+        <h1>이것은 제목입니다.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel ipsum accusantium, neque eaque quidem, commodi asperiores reprehenderit tempora ullam repellat deleniti aliquid facere. Veritatis explicabo tenetur doloremque ullam atque.</p>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

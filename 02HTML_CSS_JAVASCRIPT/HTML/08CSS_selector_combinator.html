@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/02CSS_selector_combinator.css">
+    <title>08CSS셀렉터복합셀렉터</title>
+
+</head>
+<body>
+    <div>
+        <p>후손요소 1</p>
+        <p>후손요소 2</p>
+        <span>
+            <p>후손요소 3</p>     <!-- 여기 p 는 div의 손자 -->
+        </span>
+    </div>
+    <p>후손요소 4</p>             <!-- 여기 p 는 div의 친구 -->
+    <hr>
+
+
+    <h1>인접 형제 셀렉터</h1>
+    <p>The first paragraph</p>
+    <ul>
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <span>Another list2</span>
+    <ul>
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <h2>Another list</h2>
+    <ul>
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <hr>
+
+    <h1>가상 클래스 셀렉터</h1>
+
+    <a href="#">Hover me</a><br><br>
+    <input type="text" placeholder="focus me">
+    <input type="text" value="포커스가 들어오면 빨간색으로 변해요">
+    <input type="password" value="포커스가 들어오면 빨간색으로 변해요">
+    <hr>
+
+    <h1>구조 가상 클래스 셀렉터 first-child, last-child</h1>
+    <div>
+        <p>바깥 div의 첫번째 자식 This paragraph is the first child of its parent</p>
+        <h1>Welcome to My Homepage</h1>
+        <p>바깥 div의 두번째 자식 This paragraph is not the first child of its parent.</p>
+        <div>
+            <p>안쪽 첫째 This paragraph is the first child of its parent</p>
+            <p>안쪽 막내 This paragraph is not the first child of its parent</p>
+        </div>
+        <p>바깥 div의 막내 자식 This paragraph is not the first child of its parent.</p>
+    </div>
+    <hr>
+    
+    <h1>:nth-child(n), :nth-last-child(n)</h1>
+
+    <ol>
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+        <li>카페 라떼</li>
+        <li>카페 모카</li>
+        <li>카라멜 라떼</li>
+        <li>카푸치노</li>
+    </ol>
+    <ul>
+        <li>에스프레소</li>
+        <li>아메리카노</li>
+        <li>카페 라떼</li>
+        <li>카페 모카</li>
+        <li>카라멜 라떼</li>
+        <li>카푸치노</li>
+    </ul>
+    <hr>
+
+</body>
+</html>

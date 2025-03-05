@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07CSS셀렉터</title>
+    <link rel="stylesheet" href="../CSS/01CSS_selector.css">
+    <style>
+        h1 {color: rgb(62, 98, 214);}
+        p  {color: blue;}
+    </style>
+</head>
+
+<body>
+    <h1>hello world!</h1>
+    <h1>hello world!2</h1>
+    <p>this paragraph is styled with CSS</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p style="color: black;">Lorem ipsum dolor sit amet consectetur.</p>
+    <hr>
+
+
+    <!-- id, class 셀렉터 -->
+    <h1 class="center">id, class 셀렉터</h1>
+    <div class="container">
+        <p id="p1">paragraph 1</p>
+        <p id="p2">paragraph 2</p>    <!-- p#p2 단축어 -->
+        <p class="p1">paragraph 3</p>
+        <p class="p2">paragraph 4</p> <!-- p.p2 단축어-->
+
+        <p class="strong">strong class</p>
+        <p class="center">center class</p>
+        <p class="graycolor">graycolor class</p>
+        <p class="strong center">strong+center class</p>   <!-- 2개 이상의 class를 적용하고자 하는 경우 띄어쓰기로 구분 -->
+        <p class="strong center graycolor">strong+center+graycolor class</p>
+        <p class="p1 strong center browncolor">P1 + strong + center + brown</p>
+    </div>
+    <hr>
+
+
+
+    <!-- 어트리뷰트 셀렉터 -->
+     <h1 class="center">Attribute 셀렉터</h1>
+     <div class="">
+        <a href="https://www.google.com">google.com</a> <br>
+        <p><a href="https://www.naver.com" target="_blank">naver.com</a></p>
+        <a href="https://www.daum.net" target="_top">daum.net</a>
+     </div>
+
+
+
+    <!-- 어트리뷰트 셀렉터 ~= ( first )-->
+    <h1 class="center">Attribute 셀렉터 ~=</h1>
+    <div class=""> 
+        <h2 title="heading first">heading first</h2>
+        <h2 title="heading-first">heading-first</h2>
+        <h2 title="heading second">heading second</h2>
+        <h2 title="heading-second">heading-second</h2>
+    </div>
+
+    
+
+    <!-- 어트리뷰트 셀렉터 |= (heading-) -->
+    <h1 class="center">Attribute 셀렉터 |=</h1>
+    <div class="">
+        <h2 title="heading first">heading first</h2>
+        <h2 title="heading-first">heading-first</h2>
+        <h2 title="heading second">heading second</h2>
+        <h2 title="heading-second">heading-second</h2>
+    </div>
+
+
+    <!-- 어트리뷰트 셀렉터 ^= (https://로 시작) -->
+    <h1 class="center">Attribute 셀렉터 ^=</h1>
+    <div>
+        <a href="https://www.naver.com">naver.com</a>
+        <a href="http://www.naver.com">naver2.com</a>
+    </div>
+
+
+    <!-- 어트리뷰트 셀렉터 $= (html로 끝남) -->
+     <h1 class="center">Attribute 셀렉터 $=</h1>
+     <div>
+        <a href="https://www.naver.com/aaa.pdf">naver.com/aaa.pdf</a> <br>
+        <a href="https://www.naver.com/bbbb.html">naver.com/bbbb.html</a>
+     </div>
+
+
+     <!-- 어트리뷰트 셀렉터 *= (값이 포함되면 됨) -->
+     <h1 class="center">Attribute 셀렉터 *=</h1>
+     <div>
+        <p class="first">first</p>
+        <p class="first_test">first_test</p>
+        <p class="second">second</p>
+        <p class="second test">second test</p>
+        <p class="test">test</p>
+     </div>
+</body>
+</html>
