@@ -1,0 +1,168 @@
+/* 너비와 높이 지정하기 */
+/* width, height */
+.width_height article {
+    border: 1px solid black;
+}
+
+/* px: 너빗값과 높잇값을 px 단위로 지정 */
+.width_height article:nth-child(1) {
+    width: 100px;
+    height: 100px;
+}
+
+/* %: 부모 태그를 기준으로 너빗값과 높잇값을 % 단위로 지정 */
+.width_height article:nth-child(2) {
+    width: 20%;
+    height: 20%;
+}
+
+/* vw: 웹브라우저의 너비를 기준으로 너빗값과 높잇값을 백분율로 지정 */
+.width_height article:nth-child(3) {
+    width: 10vw;
+    height: 10vw;
+}     /* 가로로 조작할때만 변함 */
+
+/* vh: 웹브라우저의 높이를 기준으로 너빗값과 높잇값을 백분율로 지정정 */
+.width_height article:nth-child(4) {
+    width: 10vh;
+    height: 10vh;
+}     /* 세로로 조작할때만 변함 */
+
+
+
+
+/* 바깥쪽 여백 지정하기 margin */
+.margin {
+    border: 1px solid red;
+}
+
+.margin div {
+    width: 50px;
+    height: 30px;
+    border: 1px solid blue;
+}
+
+/* 상하좌우 margin 20px */
+.margin div:nth-child(1) {
+    margin: 20px;
+}
+
+/* 상하는 20px, 좌우는 50px */
+.margin div:nth-child(2) {
+    margin: 20px 50px;
+}
+
+/* 상하는 20px, 좌우는 자동(auto는 가운데정렬) */
+.margin div:nth-child(3) {
+    margin: 20px auto;
+    text-align: center;    /* 텍스트 정렬 */
+}
+
+/* 위쪽 20px, 좌우는 자동(center), 아래쪽은 40px */
+.margin div:nth-child(4) {
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+/* 위쪽, 오른쪽, 아래쪽, 왼쪽 순으로 인식식 */
+.margin div:nth-child(5) {
+    margin: 0px 10px 20px 30px;
+    text-align: center;
+}
+
+/* margin-방향 */
+.margin div:nth-child(6) {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.margin div:nth-child(7) {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.margin div:nth-child(8) {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.margin div:nth-child(9) {
+    margin-right: 20px;
+    text-align: center;
+    line-height: 30px;         /* 글자 박스 내 상하 위치 조절 */
+}
+
+
+/* 안쪽 여백 지정하기 padding */
+div.padding {
+    border: 1px solid red;
+}
+
+div.padding div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.padding div:first-child {
+    padding: 0px;
+}
+.padding div:last-child {
+    padding: 30px;
+}
+
+
+/* 안쪽 여백 지정하기 padding2 크기유지 */
+div.padding2 {
+    border: 1px solid red;
+}
+
+div.padding2 div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.padding2 div:first-child {
+    padding: 0px;
+}
+.padding2 div:last-child {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+
+/* 테두리의 형태 지정하기 */
+div.line_type {
+    border: 1px solid red;
+}
+
+div.line_type div {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border: 1px solid blue;
+}
+
+div.line_type div:nth-child(1) {
+    border-width: 1px;
+    border-style: solid;      /* 실선 */
+    border-color: red;
+}
+
+div.line_type div:nth-child(2) {
+    border-width: 1px;
+    border-style: dashed;     /* 점선 */
+    border-color: green;
+}
+
+div.line_type div:nth-child(3) {
+    border-width: 10px;
+    border-style: dotted;     /* 원모양테두리 */
+    border-color: blue
+}
+
+div.line_type div:nth-child(4) {
+    border: 10px double blue;     /* 두줄 */
+}

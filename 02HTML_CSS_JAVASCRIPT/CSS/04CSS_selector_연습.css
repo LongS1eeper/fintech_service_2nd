@@ -2,3 +2,162 @@
     text-align: center;
 }
 
+.navbar a {
+    color: blue;
+}
+
+.container h2 {
+    font-size: 22px;
+}
+
+.highlight {
+    color: red;
+}
+
+header li {
+    font-size: 18px;
+}
+
+.service-list li:first-child {
+    text-align: center;
+}
+
+.review h3 {
+    color: green;
+}
+
+aside > h2 {
+    text-align: right;
+}
+
+.notice-list li:last-child {
+    color: orange;
+}
+
+.notice-list > li:nth-child(2) {
+    font-size: 20px;
+}
+
+.review:first-of-type p{       /* 문제 : p를 뒤로 보내며 해결 */
+    color: purple
+}
+
+footer a {
+    color: green;
+}
+
+a[target="_blank"] {     /* 문제 */
+    text-align: center;
+}
+
+button {
+    font-size: 16px;
+}
+
+button:hover {
+    color: red;
+}
+
+.intro + article {         /* 형제자매 선택이므로 + */
+    font-size: 24px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.review:last-child{      
+    color: pink
+}
+
+.service-list li:nth-child(3) {
+    color: red;
+}
+
+.nav:last-child{
+    text-align: right;
+}
+
+.nav li:last-child {
+    text-align: right;
+}
+
+article {
+    font-size: 20px;
+}
+
+aside li:first-child {
+    color: blue;
+}
+
+header > h1 {
+    color: purple;
+}
+
+.services > ul {
+    text-align: left;
+}
+
+footer > p {
+    font-size: 12px;
+}
+
+h3 {
+    color: blue;
+}
+
+.notice-list li:nth-child(2n+1) {
+    color: green;
+}
+
+.notice-list li:nth-child(2n) {
+    color: orange;
+}
+
+section p {
+    font-size: 16px;
+}
+
+article p:first-of-type {
+    color: red;
+}
+
+nav a:hover {
+    color: green;
+}
+
+button:hover {
+    font-size: 18px;
+}
+
+.review:first-of-type h3 {
+    font-size: 24px;
+}
+
+article:first-child {
+    color: purple;
+}
+
+.service-list li:last-child{
+    font-size: 18px;
+}
+
+.intro > p {
+    color: green;
+}
+
+.services > h2 {
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: red;
+}
+
+.reviews div:last-child {
+    font-size: 22px;
+}
+
+.navbar li:first-child {
+    color: orange;
+}
