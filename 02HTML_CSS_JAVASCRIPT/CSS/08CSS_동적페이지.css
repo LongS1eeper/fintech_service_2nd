@@ -1,0 +1,135 @@
+/* 콘텐츠 모양을 자유롭게 변형하기1 */
+section {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /* float: left; */
+    margin: 50px;
+}
+
+section article {
+    width: 100%;
+    height: 100%;
+    background: blue;
+    opacity: 0.3;
+}
+
+/* scale 확대, 축소 */
+/* 1이 기본 크기로 숫자와 크기는 비례 */
+section:nth-of-type(1) article {
+    transform: scale(1.3);
+}
+
+/* 20도 만큼 비틈 */
+section:nth-of-type(2) article {
+    transform: skewY(20deg);
+}
+
+/* 요소를 이동 */
+section:nth-of-type(3) article {
+    transform: translateY(50px)   /* translate(50px)은 x축 기준 */
+}
+
+/* 요소를 회전 */
+section:nth-of-type(4) article {
+    transform: rotate(45deg)
+}
+
+
+
+
+/* 콘텐츠 모양 자유롭게 변형하기2 */
+/* 원근감을 만들어주는 태그 perspective */
+/* 100px: 과정된 원근감 표현, 400px: 적당한 원근감 표현, 1000px은 거의 평면처럼 보임임 */
+.transform2 section {
+    perspective: 400px;
+}
+
+.transform2 section:nth-of-type(1) article {
+    transform: rotateX(45deg);
+}
+
+.transform2 section:nth-of-type(2) article {
+    transform: rotateY(45deg);
+}
+
+.transform2 section:nth-of-type(3) article {
+    transform: translateZ(100px);
+}
+
+.transform2 section:nth-of-type(4) article {
+    transform: translateZ(-100deg);
+}
+
+
+
+
+/* 콘텐츠 모양 자유롭게 변형하기3 중심축 */
+.transform3 section {
+    perspective: 600px;
+}
+
+.transform3 section:nth-of-type(1) article {
+    transform: rotateY(120deg);
+    transform-origin: center center;
+}
+
+.transform3 section:nth-of-type(2) article {
+    transform: rotateY(120deg);
+    transform-origin: right center;
+}
+
+
+
+/* transition으로 전환효과 적용하기 */
+.transition .red_box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+}
+
+/* 박스에 커서를 올리면 1초 딜레이 후 3초에 걸쳐 파란색으로 변경경 */
+.transition .red_box:hover {
+    background-color: blue;
+    transition-duration: 3s;
+    transition-delay: 1s;
+}
+
+/* transition의 속성으로 요소 변화시키기 */
+.container .bar {
+    width: 10px;
+    border: 1px;
+    margin-bottom: 10px;
+    background-color: gray;
+    color: white;
+    transition-property: width;
+    transition-duration: 5s;
+}
+
+.container:hover .bar {
+    width: 220px;
+}
+
+/* linear: 처음과 속도 일정 */
+.bar:nth-child(1) {
+    transition-timing-function: linear;
+}
+/* ease: 처음에는 속도가 빨라지다가 중간부터 느려짐 */
+.bar:nth-child(2) {
+    transition-timing-function: ease;
+}
+/* ease-in: 처음 속도 느림, 점점 빨라짐 */
+.bar:nth-child(3) {
+    transition-timing-function: ease-in;
+}
+/* ease-out: 처음 속도 빠름, 점점 느려짐짐 */
+.bar:nth-child(4) {
+    transition-timing-function: ease-out;
+}
+/* ease-in-out: 처음 느림, 중간 빠름, 마지막 느림 */
+.bar:nth-child(5) {
+    transition-timing-function: ease-in-out;
+}

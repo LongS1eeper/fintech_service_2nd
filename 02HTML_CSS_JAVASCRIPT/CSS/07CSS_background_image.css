@@ -1,0 +1,532 @@
+/* 배경 색 지정하기 */
+/* backgroud-color: 색 */
+.backgcolor div:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.backgcolor div:nth-child(2) {
+    background-color: #ff22dd;
+    color: white;
+}
+
+.backgcolor div:nth-child(3) {
+    background-color: rgb(12,85,213);
+    color: white;
+}
+
+.backgcolor div:nth-child(4) {
+    background-color: rgba(193, 2, 47, 0.527);
+    color: white;
+}
+
+
+/* 배경 무늬 삽입하기 */
+.backgcolor div:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    background: repeating-linear-gradient(
+        45deg,             /* 45도 각도 */
+        #f06,            /* 빨강색 (#ff0066과 동일) */
+        #ff0066 10px,    /* 빨강색을 10px까지 유지 */
+        #fff 10px,       /* 흰색을 10px부터 시작 */
+        #ffffff 20px     /* 흰색을 20px까지 유지 */
+    );                     /* 빨강색이 10px 동안 지속된 후, 흰색이 10px 동안 유지되고 다시 반복 */
+}
+
+.backgcolor div:nth-child(6) {
+    /* 검정색 동그라미가 배경에 반복적으로 나타남 */
+    background: radial-gradient(#000 10%, transparent 10%);
+    background-size: 20px, 20px;
+}
+
+.backgcolor div:nth-child(7) {
+    background: repeating-linear-gradient(
+        90deg,             /* 90도 각도 */
+        #f06,            /* 빨강색 (#ff0066과 동일) */
+        #ff0066 20px,    /* 빨강색을 20px까지 유지 */
+        #fff 20px,       /* 흰색을 20px부터 시작 */
+        #ffffff 40px     /* 흰색을 40px까지 유지 */
+    );                     /* 빨강색이 20px 동안 지속된 후, 흰색이 20px 동안 유지되고 다시 반복 */
+}
+
+
+/* 이미지 넣기 */
+/* background-image: 배경 이미지 삽입 */
+.backimg div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+/* 이미지 넣기 */
+.backimg div:nth-child(1) {
+    background-image: url(../HTML/img/pattern.png);
+}
+
+/* 이미지 넣기 - 이미지가 반복 */
+.backimg div:nth-child(2) {
+    width: 500px;
+    height: 500px;
+    background-image: url(../HTML/img/car1.jpg);    /* 사진 해상도보다 박스가 큰 경우 반복적(디폴트값)으로 삽입됨 */
+}
+
+
+/* background-repeat: 삽입한 배경 이미지 반복 */
+/* 삽입한 이미지를 가로로만 반복 */
+.backimg div:nth-child(3) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../HTML/img/pattern.png);   
+    background-repeat: repeat-x;        
+}
+
+/* 삽입한 이미지를 세로로만 반복 */
+.backimg div:nth-child(4) {
+    width: 500px;
+    height: 500px;
+    background-image: url(../HTML/img/pattern.png);   
+    background-repeat: repeat-y;       
+}
+
+/* no-repeat으로 이미지 반복 X */
+.backimg div:nth-child(5) {
+    width: 500px;
+    height: 500px;
+    background-image: url(../HTML/img/pattern.png);   
+    background-repeat: no-repeat;       
+}
+
+
+/* background-position: 배경 이미지 위치 설정 */
+/* 중앙에 출력되도록 */
+.backimg div:nth-child(6) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../HTML/img/pattern.png);   
+    background-repeat: no-repeat;        /* 반복되지 않도록 : 1번만 출력 */
+    background-position: center;         
+}
+
+/* 중앙 아래에 출력되도록 */
+.backimg div:nth-child(7) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../HTML/img/pattern.png);    
+    background-repeat: no-repeat;       
+    background-position: center bottom;         
+}
+
+/* 우측 상단에 출력되도록 */
+.backimg div:nth-child(8) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../HTML/img/pattern.png);    
+    background-repeat: no-repeat;       
+    background-position: right top;         
+}
+
+/* px 단위로 이미지 배치하기 */
+.backimg div:nth-child(9) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../HTML/img/pattern.png);    
+    background-repeat: no-repeat;       
+    background-position: 50px 100px;         
+}
+
+/* % 단위로 이미지 배치하기기 */
+.backimg div:nth-child(10) {
+    width: 300px;
+    height: 300px;
+    background-image: url(../HTML/img/pattern.png);    
+    background-repeat: no-repeat;       
+    background-position: 50% 20%;         
+}
+
+
+
+/* 배경 이미지 크기 조절하기 */
+.img_size div {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+/* background-size: 배경 이미지 크기 */
+.img_size div:first-child {
+    background-image: url(../HTML/img/rose.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;      /* contain: 창 크기에 맞춤 */
+}
+.img_size div:first-child {
+    background-image: url(../HTML/img/rose.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;      /* cover: 창 크기에 채우기 */
+}
+
+
+
+/* 두 개의 이미지를 겹치고 싶을 때 */
+div.twoinone {
+    width: 90vw;
+    height: 90vh;
+    margin: 4vh auto;
+    border: 1px solid black;
+}
+
+/* background-attachment: 배경 이미지가 움직이지 않게 고정 */
+.twoinone div {
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid red;
+    background-attachment: fixed;
+}
+
+.twoinone div:first-child {
+    background-image: url(../HTML/img/car1_BIG.jpg);
+    background-size: contain;
+}
+
+.twoinone div:last-child {
+    background-image: url(../HTML/img/car2.jpg);
+    background-size: contain;
+}
+
+
+
+/* float 블록 요소 좌우로 배치하기 */
+.wrap {
+    width: 800px;
+    margin: 100px, auto;
+    border: 5px solid black;
+}
+
+/* float 통해 블럭을 화면 방향으로 띄운다는 방식으로로 인식 */
+.wrap .left{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    float: left;
+}
+
+.wrap .right{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+
+.wrap::after {
+    content:" ";            /* 테두리 겹치지 않게 도와줌 */
+    display: block;
+    clear: both;
+}
+
+/* float으로 이미지와 글 배치하기 */
+.float img {
+    width: 200px;
+    float: left;
+    margin-right: 1rem;
+}
+
+
+
+/* position 요소를 자유롭게 배치하기 */
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+.red-box{
+    background-color: red;
+}
+.green-box{
+    background-color: green;
+}
+.blue-box{
+    background-color: blue;
+}
+
+/* relative: 적용된 요소의 현재 위칫값을 기준으로 상대위치를 정함 */
+.green-box {
+    position: relative;
+    left: 100px;
+    top: 0px;
+}
+
+/* absolute: 부모 요소의 특정 구간을 기준으로 절대 위치를 정함 */
+.red-box {
+    position: absolute;
+    left:100px;
+    top: 0px;                   /* 고정 수치이므로 페이지 꼭대기로 감 */
+}
+
+/* fixed: 웹브라우저를 기준으로 절대 위치를 지정 */
+.blue-box {
+    position: fixed;            /* 보고있는 페이지 속 위치 고정 -> 스크롤 해도 같은 위치에 붙어있음 */
+    left:100px;
+    bottom: 50px;                   
+}
+
+
+
+/* z-index 겹쳐있는 요소의 z축 순서 정하기 */
+/* z-index가 클수록 위로 올라옴 */
+.zindex {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 100px auto;
+    position: relative;
+}
+
+.zindex .zileft {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.zindex .zimiddle {
+    width: 200px;
+    height: 200px;
+    background: green;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    z-index: 3;
+}
+
+.zindex .ziright {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;            
+}
+
+
+/* opacity: 투명도 조절하기 */
+/* 1: 불투명, 0: 투명 */
+.opacity {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 100px auto;
+    position: relative;
+}
+
+.opacity .opleft {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+    opacity: 0.2;
+}
+
+.opacity .opmiddle {
+    width: 200px;
+    height: 200px;
+    background: green;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.opacity .opright {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1; 
+    opacity: 0.7;           
+}
+
+
+
+/* shadow: 음영 조절하기 */
+/* 1: 불투명, 0: 투명 */
+.shadow {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 100px auto;
+    position: relative;
+}
+
+.shadow .shleft {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+    opacity: 0.2;
+}
+
+.shadow .shmiddle {
+    width: 200px;
+    height: 200px;
+    background: green;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    z-index: 3;
+    opacity: 0.9;
+    box-shadow: 20px 2px 30px black;    /* x이동 y이동 블러반경 */
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 0px red;
+}
+
+.shadow .shright {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1; 
+    opacity: 0.7;           
+}
+
+
+
+/* border-radius: 모서리 둥글게 만들기 */
+
+.radius {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 100px auto;
+    position: relative;
+}
+
+.radius .rdleft {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+    opacity: 0.2;
+}
+
+.radius .rdmiddle {
+    width: 200px;
+    height: 200px;
+    background: green;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    z-index: 3;
+    opacity: 0.9;
+    box-shadow: 20px 2px 30px black;    /* x이동 y이동 블러반경 */
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 0px red;
+    border-radius: 100px;                /* 100이상 값은 원 */
+    background-image: url(../HTML/img/rose.jpg);
+    background-size: contain;
+}
+
+.radius .rdright {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1; 
+    opacity: 0.7;           
+}
+
+
+
+/* linear-gradient로 그레디언트 적용하기 */
+/* linear-gadient(방향, 색상, 색상2) */
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 300px;
+    color: white;
+    border: 1px solid black;
+}
+
+.gradient .box.grleft {
+    background: linear-gradient(to bottom, blue, red);
+}
+
+.gradient .box.grright {
+    background: linear-gradient(to left, blue, red);
+}
+
+.gradient .box.grmiddle {
+    background: linear-gradient(45deg, blue, red);
+}
+
+
+
+/* filter로 특수효과 적용하기 */
+.filter div {
+    background-image: url(../HTML/img/rose.jpg);
+    background-size: contain;
+}
+
+.filter div:nth-child(1) {
+    filter: blur(3px);
+}
+/* brightness 0 어둡고 1 밝음 */
+.filter div:nth-child(2) {
+    filter: brightness(0.3);
+}
+/* 100% 기준으로로 작아질 수록 대비 감소, 커지면 증가 */
+.filter div:nth-child(3) {
+    filter: contrast(130%);
+}
+/* 100%에 가까울 수록 흑백으로 전환환 */
+.filter div:nth-child(4) {
+    filter: grayscale(90%);
+}
+/* 0:원본 / 0-360deg까지 변경 가능 */
+.filter div:nth-child(5) {
+    filter: hue-rotate(150deg);
+}
+/* 100%에 가까울수록 색이 반대로 변환됨 */
+.filter div:nth-child(6) {
+    filter: invert(100%);
+}
+/* 0에 가까울 수록 채도가 낮아짐 */
+.filter div:nth-child(7) {
+    filter: saturate(0.5);
+}
+/* 100%에 가까울 수록 갈색 톤으로 변경됨 */
+.filter div:nth-child(7) {
+    filter: sepia(100%);
+}
