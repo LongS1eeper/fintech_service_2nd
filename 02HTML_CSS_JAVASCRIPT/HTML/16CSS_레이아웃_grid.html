@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/10CSS_레이아웃_Grid.css" />
+    <title>Grid 레이아웃</title>
+  </head>
+  <body>
+    <h1>그리드(Grid) 레이아웃</h1>
+    <p>
+      그리드 레이아웃은 웹페이지에서 2차원(행,열)을 이용해 레이아웃을 설계하는
+      방식
+    </p>
+    <p>플렉스 방식보다 더 정교하게 레이아웃 설계 가능</p>
+    <div class="container">
+      <div class="row">
+        <div class="attribute">행(row):</div>
+        <div class="explain">그리드 레이아웃에서 가로줄을 의미</div>
+      </div>
+      <div class="row">
+        <div class="attribute">열(column):</div>
+        <div class="explain">그리드 레이아웃에서 세로줄을 의미</div>
+      </div>
+      <div class="row">
+        <div class="attribute">그리드 셀(grid cell)</div>
+        <div class="explain">행과 열이 만나 이루어지는 하나의 공간</div>
+      </div>
+      <div class="row">
+        <div class="attribute">그리드 겝(grid gap)</div>
+        <div class="explain">그리드 셀과 그리드 셀 사이의 간격</div>
+      </div>
+      <div class="row">
+        <div class="attribute">그리드 아이템(grid item)</div>
+        <div class="explain">그리드 셀 안에서 표현되는 콘텐츠</div>
+      </div>
+      <div class="row">
+        <div class="attribute">그리드 라인(grid line)</div>
+        <div class="explain">그리드 행과 열을 그리는 선</div>
+      </div>
+      <div class="row">
+        <div class="attribute">그리드 넘버(grid number)</div>
+        <div class="explain">그리드 라인에 붙는 번호</div>
+      </div>
+      <div class="row">
+        <div class="attribute">그리드 컨테이너(grid container)</div>
+        <div class="explain">
+          그리드 레이아웃의 전체 내용을 담고있는 최상위 부모 요소
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>그리드 실습</h1>
+    <div class="grid-container">
+      <div class="grid-item">item-1</div>
+      <div class="grid-item">item-2</div>
+      <div class="grid-item">item-3</div>
+      <div class="grid-item">item-4</div>
+      <div class="grid-item">item-5</div>
+      <div class="grid-item">item-6</div>
+      <div class="grid-item">item-7</div>
+      <div class="grid-item">item-8</div>
+      <div class="grid-item">item-9</div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>그리드 속성을 이용해 위치 지정하기</h1>
+    <div class="grid-container2">
+        <div class="grid-item2 header">header</div>      <!-- class 2개 삽입 -->
+        <div class="grid-item2 sidebar">sidebar</div>
+        <div class="grid-item2 content">content</div>
+        <div class="grid-item2 footer">footer </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <h1>그리드 넘버를 이용해 위치 지정하기</h1>
+    <div class="grid-container3">
+        <div class="grid-item3">header</div>      
+        <div class="grid-item3">sidebar</div>
+        <div class="grid-item3">content</div>
+        <div class="grid-item3">footer </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

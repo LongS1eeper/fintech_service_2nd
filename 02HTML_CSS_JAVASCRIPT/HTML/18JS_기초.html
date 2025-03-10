@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/12javascript.css">
+    <script defer src="../JS/01javascript.js"></script> <!-- defer 사용하여 body 로딩 후 실행 -->
+    <title>Basic JavaScript</title>
+</head>
+<body>
+    <h1 class="title">HELLO WORLD in H1 tag</h1>
+    <hr>
+
+    <h1>클릭 이벤트(이동) 연결하기</h1>
+    <a href="https://www.naver.com/" target="_blank" id="link">click</a> <!-- 정상 작동 -->
+
+    <h1>클릭 이벤트(이동X) 연결하기</h1>
+    <a href="https://www.naver.com/" target="_blank" id="no-link">click</a> <!-- id로 구분하여 동작 안 함 -->
+
+    <hr>
+    
+    <!-- 특정 영역에 마우스 포인터를 위치할 때 동작하는 호버 마우스 이벤트 연결 -->
+    <h1>호버 이벤트 연결하기</h1>
+    <div id="box"></div>
+
+    <hr>
+    <h1>반복되는 요소에 이벤트 한꺼번에 연결하기</h1>
+    <ul class="list">
+        <li><a href="#">item1</a></li>
+        <li><a href="#">item2</a></li>
+        <li><a href="#">item3</a></li>
+        <li><a href="#">item4</a></li>
+    </ul>
+
+    <hr>
+    <h1>클릭 이벤트가 발생 할 때 올라가는 숫자</h1>
+    <a href="#" class="btnPlus">Plus</a>
+    <a href="#" class="btnMinus">Minus</a>
+    
+    <hr>
+    <h1>버튼을 클릭하면 좌우로 회전하는 박스 만들기</h1>
+    <a href="#" class="btnLeft">왼쪽으로 회전</a>
+    <a href="#" class="btnRight">오른쪽으로 회전</a>
+    <div id="box2">box2</div>
+
+</body>
+</html>

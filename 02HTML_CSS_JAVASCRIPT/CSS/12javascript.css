@@ -1,0 +1,27 @@
+/* 클릭 이벤트 */
+a {
+    font-size: 40px;
+    color: #555;
+}
+
+
+/* 마우스 호버 이벤트 */
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 100px auto;
+}
+
+/* 버튼을 클릭하면 좌우로 회전하는 박스 만들기 */
+#box2 {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    background-color: aqua;
+    transition: 0.5s;
+    text-align: center;
+    line-height: 300px;
+}
+
+

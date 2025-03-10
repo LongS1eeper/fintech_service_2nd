@@ -1,0 +1,49 @@
+/* 기본 값 */
+html {
+    font-size: 80px;
+}
+
+article{
+    width: 40%;
+    height: 20%;
+    background-color: pink;
+    margin:100px auto;
+}
+
+/* 화면 넓이가 900 이하인 경우 */
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 40px;       /* 폰트 사이즈 설정 */
+    }
+
+    article {
+        background-color: orange;
+    }
+
+    h1 {
+        font-size: 2rem;      /*기본 폰트 사이즈의 2배 (80px) */
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+/* 화면 넓이가 400이하인 경우 */
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 20px;
+    }
+    
+    article {
+        background-color: aqua;
+    }
+
+    h1 {
+        font-size: 2rem;      /*기본 폰트 사이즈의 2배 (80px) */
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
