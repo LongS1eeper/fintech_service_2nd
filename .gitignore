@@ -1,4 +1,4 @@
 .ipynd_checkpoints
 data/
-.json
-.csv
+*.json
+*.csv
