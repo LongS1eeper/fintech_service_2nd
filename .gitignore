@@ -1,4 +1,7 @@
 .ipynd_checkpoints
 data/
+dist/
+build/
 *.json
 *.csv
+*.exe
