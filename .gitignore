@@ -7,3 +7,6 @@ model/
 *.csv
 *.exe
 *.keras
+*.jpg
+*.png
+*.joblib
