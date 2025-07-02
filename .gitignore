@@ -11,3 +11,4 @@ model/
 *.png
 *.joblib
 *.env*
+*.pkl
